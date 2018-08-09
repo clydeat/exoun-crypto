@@ -16,7 +16,7 @@ l'appli se trouve sur Heroku au lien suivant :
 
  :sunny:   $ bundle install
 
- :sunny:   $ heroku run rails db:migrate
+ :sunny:   $ rails db:migrate
 
 
 
