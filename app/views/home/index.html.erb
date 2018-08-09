@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <h1>Bienvenue !</h1>
+  <p>Sur ce site, vous pouvez voir les cours des crypto-monnaies sur lesquelles vous cliquez.</p>
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      Crypto-monnaies
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+      <% Crypto.all.each do |crypto| %>
+      <li><a href="/currency/<%= crypto.name_of_crypto %>"><%= crypto.name_of_crypto %></a></li>
+      <% end %>
+    </ul>
+  </div>
+</body>
+
+</html>
