@@ -1,36 +1,37 @@
-# README
+# Une appli de scrapping de CoinMarketCap
+ *en ligne sur https://crypto-money-sixters.herokuapp.com/* </br></br></br>
 
---------------------------------------------------------------------------------------
-Application Scrap de Crypto ! ;)
---------------------------------------------------------------------------------------
+### Salut les mouss'!  :sunglasses:
+</br>
+l'appli se trouve sur Heroku au lien suivant :
 
-Salut moussaillon tu vas bien ? 
-
-Pour voir l'appli en production, voici le lien : https://diane-scrap-cryptos.herokuapp.com/.
-
-Dans ce README il y a un exo d'une app rails, avec des models et des controllers. Cette appli a été réalisée par Diane à l'aide des six stars !
-
-Lancer l'appli : 
-
-Verifie ta version de Ruby : 5.2.1 !
-
-Télécharge ou clone le repo
-
-Place toi dans le dossier correspondant et fait depuis ton terminal bundle install
-
-Puis dans le dossier db ouvre le fichier sqlite pour voir les bases de données.
-
-----------------------------------------------------------------------------------------
-Contenu
-----------------------------------------------------------------------------------------
+</br>
+==================================================================================================
 
 
-Les utilisateurs
+### Pour lancer l'appli en local :
 
-peuvent choisir parmi plus de 1700 crytpo-monnaies
 
-pour voir leur cours...
+ :sunny:   Cloner le repo : *attention l'appli a été faite avec sqlite3*
 
-à l'infini ! ;)
+ :sunny:   $ bundle install
 
-Bon THP à toi moussaillon !
+ :sunny:   $ heroku run rails db:migrate
+
+
+
+</br>
+==================================================================================================
+
+### Le projet :
+
+L'appli permet *(à l'aide de méthodes passées en service)* de connaître la valeur actuelle de la cryto-monnaie de votre choix.
+
+
+</br>
+==================================================================================================
+
+### La Team :
+
+Fait avec amour à Paris par les Six-stars !</br>
+*Garance, Laëtitia, Cat, Diane, Asmahane et Perrine.*  :octocat:
