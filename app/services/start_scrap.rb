@@ -5,14 +5,18 @@ require 'open-uri'
 
 class StartScrap
 
+# Définition du lien via Noki reprenant les informations à scrapper
   def initialize
     @doc = Nokogiri::HTML(open("https://coinmarketcap.com/all/views/all/"))
   end
 
+# Tu te demandes pourquoi un perform alors qu'il n'y a qu'une def?? 
+# Le nom "perform" est plus stylé, c'est tout!
   def perform
     save
   end
 
+# Ici création du Hash concaténant les noms de monnaie scrappés ainsi que les valeurs associées
   def save
     @array_des_cours = []
     @doc.css('a[class = price]').each{ |taux| @array_des_cours<< taux.text}

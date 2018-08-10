@@ -16,11 +16,15 @@
   <h1>Welcome!</h1>
   <p>Sur ce site, vous pouvez voir les cours <br> 
   des crypto-monnaies sur lesquelles vous cliquez.</p>
+  
+  <!-- Référence Bootstrap pour le bouton -->
   <div class="dropdown">
     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       Crypto-monnaies
       <span class="caret"></span>
     </button>
+
+   <!--  Incrémentation dans le menu déroulant du nom de chacune des monnaie -->
     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
       <% Crypto.all.each do |crypto| %>
       <li><a href="/currency/<%= crypto.name_of_crypto %>"><%= crypto.name_of_crypto %></a></li>

@@ -13,6 +13,7 @@
 </head>
 
 <body>
+	<!-- Résultat de la recherche : l.17 reprend le nom de la monnaie séléctionnée par l'utilisateur; l.18 récupère la valeur v de l'hash_des_cours (cf def save dans app/services/start_scrap.rb)-->
   <h1>Voici la valeur du <%= params[:name_of_crypto] %> !</h1>
   <p>Le <%= params[:name_of_crypto] %> vaut  <%= @monney.cour_of_crypto %>.</p>
 </body>
