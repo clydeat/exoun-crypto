@@ -1,10 +1,10 @@
 # Une appli de scrapping de CoinMarketCap
- *en ligne sur https://crypto-money-sixters.herokuapp.com/* </br></br></br>
+ *en ligne sur Heroku* </br></br></br>
 
 ### Salut les mouss'!  :sunglasses:
 </br>
 l'appli se trouve sur Heroku au lien suivant :
-
+https://crypto-money-sixters.herokuapp.com/
 </br>
 ==================================================================================================
 
